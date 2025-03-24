@@ -9,8 +9,8 @@ def scan_folder_structure(folder_path):
     Excludes specified folders and file types.
     """
     # Excluded folder names and file extensions
-    excluded_folders = {"node_modules", "__pycache__", "vnev", "backups", ".git"}
-    excluded_extensions = {".db", ".ico"}
+    excluded_folders = {"node_modules", "__pycache__", "venv", "build", "uploads", ".git", "builds"}
+    excluded_extensions = {".db", ".ico", ".log", ".pem", ".key", ".png", ".jpg", ".crt", ".cer", ".exe", ".toc", ".pyz", ".spec", ".pkg", ".pyc", ".zip", ".cer"}
     
     structure_lines = [f"{os.path.basename(folder_path)}/"]
     
